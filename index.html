@@ -5,17 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>बड़े महादेव मंदिर अतरौली</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "7t5whgJzZRSvM3Efo",
+      });
+   })();
+</script>
 </head>
 
 <body>
     <div id="main">
 
         <!-- slider Start -->
-        <div id="slider" class="slide-con">
-            <img src="img/hero.jpg" alt="" class="slide">
+        <div id="slider" class="slide-con" style="margin-top: 10px;">
+           <video autoplay  loop muted class="slide">
+            <source src="video/vid1.mp4" type="video/mp4">
+           </video>
             <!-- <img src="https://media.istockphoto.com/id/1481193734/photo/close-up-of-a-house-sold-sign-on-a-lawn-in-front-of-a-big-modern-house-with-traditional.jpg?s=612x612&w=0&k=20&c=vFzyamkT0vVtn5chCUWibUmeq-R-9C8FsELkB4FeTkA=" alt="" class="slide">
             <img src="https://media.istockphoto.com/id/1481193734/photo/close-up-of-a-house-sold-sign-on-a-lawn-in-front-of-a-big-modern-house-with-traditional.jpg?s=612x612&w=0&k=20&c=vFzyamkT0vVtn5chCUWibUmeq-R-9C8FsELkB4FeTkA=" alt="" class="slide">
             <img src="https://media.istockphoto.com/id/1481193734/photo/close-up-of-a-house-sold-sign-on-a-lawn-in-front-of-a-big-modern-house-with-traditional.jpg?s=612x612&w=0&k=20&c=vFzyamkT0vVtn5chCUWibUmeq-R-9C8FsELkB4FeTkA=" alt="" class="slide"> -->
@@ -34,61 +47,33 @@
             <h2>बड़े महादेव मंदिर अतरौली</h2>
             <!-- <h4>Property Guru</h4> -->
             <!-- <p>Company</p> -->
-            <div class="social-icon">
+            <!-- <div class="social-icon">
                 <a href="tel:+919975752338" target="_blank"><i class="fa-solid fa-phone"></i></a>
-                <a href="//api.whatsapp.com/send?phone=+919975752338" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
-                <a href="https://goo.gl/maps/oQmdtXk5ze2N2Jqx8" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-                <a href="https://punepropguru@gmail.com                " target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="//api.whatsapp.com/send?phone=+919975752338" target="_blank"><i
+                        class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="https://goo.gl/maps/oQmdtXk5ze2N2Jqx8" target="_blank"><i
+                        class="fa-solid fa-location-dot"></i></a>
+                <a href="https://punepropguru@gmail.com                " target="_blank"><i
+                        class="fa-solid fa-envelope"></i></a>
                 <a href="https://goo.gl/maps/oQmdtXk5ze2N2Jqx8" target="_blank"><i class="fa-solid fa-globe"></i></a>
-            </div>
+            </div> -->
             <div class="info">
-                <p>Phone: +91 9975752338 </p>
+                <p>Phone: +91 7078939001 </p>
                 <!-- <p>Email: punepropguru@gmail.com </p>
                 <p>D16, Palladium Exotica, Madhav Nagar, Dhanori, Pune -411015 </p> -->
             </div>
-            <form action="">
-                <div class="input">
-                    <input type="submit" value="व्हाट्सएप पर फोटो लेने के लिए यहां क्लिक करें">
-                </div>
-                <!-- <div class="hero-btns">
-                    <a href=""><button>Save contacts</button></a>
-                </div> -->
+            <a href="https://api.whatsapp.com/send?phone=+917078939001&text=नमस्ते, कृपया बड़े महादेव मंदिर की फोटो भेजें" target="_blank" style="color: green;"><button style="color: green;">व्हाट्सएप पर फोटो लेने के लिए यहां क्लिक करें</button></a>
+                
 
-            </form>
+            
             <h3 style="text-align: center; margin-top: 10px;">सभी फ़ोटो खुद देखने या डाउनलोड करने के लिए नीचे जाएँ</h3>
             <!-- <button onclick="onPopup()">Share</button> -->
-            <div class="popup" id="popup">
-                <!-- <button onclick="closePopup()"><i class="fa-solid fa-circle-xmark"></i></button> -->
-                <h4>कृपया फ़ोटो डाउनलोड करने के लिए फ़ोन नंबर दर्ज करें</h4>
-                <!-- <div class="icon-con">
-                    <div class="icon">
-                        <a href="https://web.whatsapp.com/" target="_blank"> <i
-                                class="fa-brands fa-square-whatsapp"></i> </a>
-                        <a href="sms:" target="_blank"> <i class="fa-solid fa-message"></i></a>
-                    </div>
-                    <div class="icon">
-                        <a href="https://www.facebook.com/login/" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://twitter.com/twitt_login" target="_blank"> <i
-                                class="fa-brands fa-twitter"></i></a>
-                    </div>
-                    <div class="icon">
-                        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
-                                class="fa-brands fa-square-instagram"></i></a>
-                        <a href="https://www.linkedin.com/feed/" target="_blank"> <i
-                                class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                </div> -->
-                <label for="">मोबाइल नंबर लिखिए</label>
-                <input type="tel" placeholder="याहा मोबाइल नंबर लिखिए">
-                <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><button>नंबर दर्ज करें</button></a>
-                <!-- <button onclick="closePopup()"><i class="fa-solid fa-circle-xmark"></i></button> -->
-            </div>
+
         </section>
         <!-- Hero End -->
 
         <!-- About Start -->
-        
+
         <!-- About End -->
 
         <!-- Service Start -->
@@ -98,157 +83,84 @@
                 <div class="card">
                     <h3>पहला सोमवार 2024</h3>
                     <div class="img">
-                        <img src="img/1.jpg" alt="">
+                        <img src="img/1.jpg" alt="" class="download" id="ione">
                     </div>
-                    <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><button>अभी डाउनलोड करें
-                            </button></a>
+                    <a onclick="downloadImage('img/1.jpg')"><button>अभी डाउनलोड करें
+                        </button></a>
                 </div>
                 <div class="card">
                     <h3>दूसरा सोमवार 2024</h3>
                     <div class="img">
-                        <img src="img/3.jpg" alt="">
+                        <img src="img/3.jpg" alt="" class="download">
                     </div>
-                    <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><button>अभी डाउनलोड करें</button></a>
+                    <a onclick="downloadImage('img/3.jpg')"><button>अभी डाउनलोड करें</button></a>
                 </div>
                 <div class="card">
                     <h3>तीसरा सोमवार 2024</h3>
                     <div class="img">
-                        <img src="img/2.jpg" alt="">
+                        <img src="img/2.jpg" alt="" class="download">
                     </div>
-                    <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><button>अभी डाउनलोड करें</button></a>
+                    <a onclick="downloadImage('img/2.jpg')"><button>अभी डाउनलोड करें</button></a>
                 </div>
                 <div class="card">
                     <h3>चौथा सोमवार 2024</h3>
                     <div class="img">
                         <img src="" alt="">
+                        <!-- <video autoplay  loop muted class="slide">
+                            <source src="video/vid1.mp4" type="video/mp4">
+                           </video> -->
                     </div>
-                    <a href="//api.whatsapp.com/send?phone=917498372484" target="_blank"><button>अभी डाउनलोड करें</button></a>
+                    <a onclick="downloadImage('ss')"><button>अभी डाउनलोड करें</button></a>
                 </div>
-                
+
             </div>
         </section>
         <!-- Service End -->
 
-      
+
 
         <!-- Gallery Start -->
         <section id="gallery">
-            <h2>Gallery</h2>
+            <h2 style="text-align: center;">अब मन चाहे केक डिजाइन पाए डोरा केक ऐप पर, अभी डाउनलोड करें </h2>
             <div class="card-con">
                 <div class="card">
-                    <img src="https://media.istockphoto.com/id/1481193734/photo/close-up-of-a-house-sold-sign-on-a-lawn-in-front-of-a-big-modern-house-with-traditional.jpg?s=612x612&w=0&k=20&c=vFzyamkT0vVtn5chCUWibUmeq-R-9C8FsELkB4FeTkA=" alt="">
+                    <img src="img/dora cake.jpg"
+                        alt="">
+                        <!-- <a href=""><button>अभी डाउनलोड करें</button></a> -->
                 </div>
-               
+                <a href="https://play.google.com/store/apps/details?id=com.sshop.doracake" target="_blank"><button>अभी डाउनलोड करें</button></a>
+
             </div>
         </section>
         <!-- Gallery End -->
 
 
-
-        <!-- Contact Start -->
-        <!-- <section id="contact">
-            <h2>Contact Us</h2>
-            <div class="info">
-                <p>Phone: +91 9975752338 </p>
-                <p>Email: punepropguru@gmail.com </p>
-                <p>D16, Palladium Exotica, Madhav Nagar, Dhanori, Pune -411015 </p>
-            </div>
-        </section> -->
-        <!-- Contact End -->
-
-        <!-- Link Start -->
-        <!-- <div id="link">
-            <h2>Links</h2>
+        <!-- Navbar Start -->
+        <nav>
             <ul>
-                <a href="https://vcard.reach7.in/Genuine%20Spa/" target="_blank" style="margin-top: 12px;">
-                    <li>1- Genuine Spa</li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Reach7/" target="_blank" style="margin-top: 12px;">
-                    <li>2- Reach7</li>
-                </a>
-
-                <a href="https://vcard.reach7.in/PunePropertyGuru/" target="_blank" style="margin-top: 12px;">
-                    <li>3- Pune Property Guru </li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Inorbit%20cabs/" target="_blank" style="margin-top: 12px;">
-                    <li>4- Inorbit Cabs</li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Vishwa%20Travels/" target="_blank" style="margin-top: 12px;">
-                    <li>5- Vishwa Travels Pune</li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Malghe%20Electricals/" target="_blank" style="margin-top: 12px;">
-                    <li>6- Malghe Electricals and Engineers Pvt.Ltd.</li>
-                </a>
-
-                <a href="https://vcard.reach7.in/ANVIKA%20PATHOLOGY/" target="_blank" style="margin-top: 12px;">
-                    <li>7- Anvika Pathology</li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Aaswad51/" target="_blank" style="margin-top: 12px;">
-                    <li>8- Aaswad51</li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Ananya%20Industries/" target="_blank" style="margin-top: 12px;">
-                    <li>9- Ananya Furniture & Furnishing Industries </li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Degchi%20Biryani/" target="_blank" style="margin-top: 12px;">
-                    <li>10- Degchi biryani </li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Manara%20Life%20Sciences%20LLP/" target="_blank" style="margin-top: 12px;">
-                    <li>11- Manara Lyfe Sciences LLP </li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Yuva%20business/" target="_blank" style="margin-top: 12px;">
-                    <li>12- Yuva business </li>
-                </a>
-
-                <a href="https://vcard.reach7.in//Punirii%20sea%20restaurant/" target="_blank" style="margin-top: 12px;">
-                    <li>13- Punirii sea restaurant </li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Kolhapuri%20Pahunchar/" target="_blank" style="margin-top: 12px;">
-                    <li>14- Kolapuri </li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Om%20Engineers/" target="_blank" style="margin-top: 12px;">
-                    <li>15- Om Engineers </li>
-                </a>
-
-                <a href="https://vcard.reach7.in/NORTHArchitects/" target="_blank" style="margin-top: 12px;">
-                    <li>16- North Architects </li>
-                </a>
-
-                <a href="https://vcard.reach7.in/NaralUtility%20Services/" target="_blank" style="margin-top: 12px;">
-                    <li>17- Naral Mitra Utility Services </li>
-                </a>
-
-                <a href="https://vcard.reach7.in/Turning%20Natural%20Care/" target="_blank" style="margin-top: 12px;">
-                    <li>18- Turning Point Natural Care </li>
+                <a href="" onclick="prepareDownloadLinks()">
+                    <li>बड़े महादेव मंदिर के सावन के सोमवार की फोटो पायें</li>
                 </a>
 
             </ul>
-            <div style="bottom: 0%;" class="by">Design and Created By: Reach7 Solutions</div>
-        </div> -->
-        <!-- Link End -->
-    </div>
+        </nav>
+        <!-- Navbar End -->
 
-    <!-- Navbar Start -->
-    <nav>
-        <ul>
-            <a href="#slider">
-                <li>सभी फ़ोटो डाउनलोड करने के लिए बटन पर क्लिक करें</li>
-            </a>
-           
-        </ul>
-    </nav>
-    <!-- Navbar End -->
-    <script src="script.js"></script>
+
+
+
+        <div class="popup" id="popup">
+            <h4>कृपया फ़ोटो डाउनलोड करने के लिए फ़ोन नंबर दर्ज करें</h4>
+            <label for="phone">मोबाइल नंबर लिखिए</label>
+            <input type="tel" id="number" placeholder="याहा मोबाइल नंबर लिखिए" required>
+                <button onclick="sendEmail()">नंबर दर्ज करें</button>
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+
 </body>
 
 </html>

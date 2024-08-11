@@ -1,69 +1,57 @@
-const slides = document.querySelectorAll(".slide")
-var counter = 0
 
-slides.forEach(
-    (slide, index) => {
-        slide.style.left = `${index * 100}%`
-    }
-)
+var authCheck = false
 
-const goPrev = () => {
-    if (counter == 0) {
-        counter = slides.length - 1;
-        slideImage()
-    } else {
-        counter--
-        slideImage()
-    }
-}
-const goNext = () => {
-    console.log("next")
-    if (counter == slides.length - 1) {
-        counter = 0
-        slideImage()
-    } else {
-        counter++
-        slideImage()
-    }
+function sendEmail(){
+    var templateParams = {
+        number: document.getElementById("number").value
+      };
+      
+      emailjs.send('service_dkmn2gw', 'template_n1z198s', templateParams).then(
+        (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+
+      authCheck= true
+
+      if(authCheck){
+        downloadImage()
+        console.log("sendemail true")
+      }
 }
 
-
-setInterval(() => {
-    if (counter == slides.length - 1) {
-        counter = 0
-        slideImage()
-    } else {
-        counter++
-        slideImage()
-    }
-}, 4000)
-
-
-
-const slideImage = () => {
-    slides.forEach((slide) => {
-        slide.style.transform = `translateX(-${counter * 100}%)`
-    })
-}
-
-
-let popup = document.getElementById("popup")
-
-function onPopup() {
-    popup.classList.add("op")
+function showPopup() {
+    const popup = document.getElementById('popup');
+    popup.style.visibility = 'visible';
+    popup.style.transform = 'translate(-50%, -50%)';
 }
 
 function closePopup() {
-    popup.classList.remove("op")
+    const popup = document.getElementById('popup');
+    popup.style.visibility = 'hidden';
+    popup.style.transform = 'translate(-50%, -60%)'; // Moves it slightly up when hiding
 }
 
-let buyPopup = document.getElementById("buy-popup")
 
-function onBuyPopup() {
-    buyPopup.classList.add("buy-op")
-    console.log("add list")
-}
+function downloadImage(imageSrc) {
+    if(authCheck == false){
+        showPopup()
+        console.log("showpopup false")
+    }
+   
+   if(authCheck){
+    const link = document.createElement('a');  
+    link.href = imageSrc;                      
+    link.download = 'downloaded-image.jpg';    
 
-function closeBuyPopup() {
-    buyPopup.classList.remove("buy-op")
+    document.body.appendChild(link);           
+    link.click();                              
+    document.body.removeChild(link);  
+    
+    closePopup()
+    
+   }
 }
