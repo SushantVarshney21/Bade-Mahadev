@@ -1,5 +1,6 @@
 
-var authCheck = false
+var authCheck = false;
+var imageSrcF="";
 
 function sendEmail(){
     var templateParams = {
@@ -18,8 +19,8 @@ function sendEmail(){
       authCheck= true
 
       if(authCheck){
-        downloadImage()
-        console.log("sendemail true")
+        downloadImageAfterMail();
+        console.log("sendemail true");
       }
 }
 
@@ -37,21 +38,53 @@ function closePopup() {
 
 
 function downloadImage(imageSrc) {
+
+    //store src of image on  global
+    imageSrcF=imageSrc;
+
+
     if(authCheck == false){
-        showPopup()
-        console.log("showpopup false")
+        showPopup();
+        console.log("showpopup false");
     }
    
    if(authCheck){
     const link = document.createElement('a');  
-    link.href = imageSrc;                      
+    link.href = imageSrcF;                      
     link.download = 'downloaded-image.jpg';    
 
     document.body.appendChild(link);           
     link.click();                              
     document.body.removeChild(link);  
     
-    closePopup()
+    closePopup();
+    
+   }
+}
+
+
+
+
+//for download image after mail
+function downloadImageAfterMail() {
+
+
+
+    if(authCheck == false){
+        showPopup();
+        console.log("showpopup false");
+    }
+   
+   if(authCheck){
+    const link = document.createElement('a');  
+    link.href = imageSrcF;                      
+    link.download = 'downloaded-image.jpg';    
+
+    document.body.appendChild(link);           
+    link.click();                              
+    document.body.removeChild(link);  
+    
+    closePopup();
     
    }
 }

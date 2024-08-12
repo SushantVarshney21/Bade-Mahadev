@@ -26,7 +26,7 @@
 
         <!-- slider Start -->
         <div id="slider" class="slide-con" style="margin-top: 10px;">
-           <video autoplay  loop  class="slide">
+           <video autoplay muted  loop  class="slide">
             <source src="video/vid1.mp4" type="video/mp4">
            </video>
             <!-- <img src="https://media.istockphoto.com/id/1481193734/photo/close-up-of-a-house-sold-sign-on-a-lawn-in-front-of-a-big-modern-house-with-traditional.jpg?s=612x612&w=0&k=20&c=vFzyamkT0vVtn5chCUWibUmeq-R-9C8FsELkB4FeTkA=" alt="" class="slide">
@@ -62,11 +62,11 @@
                 <!-- <p>Email: punepropguru@gmail.com </p>
                 <p>D16, Palladium Exotica, Madhav Nagar, Dhanori, Pune -411015 </p> -->
             </div>
-            <a href="https://api.whatsapp.com/send?phone=+917078939001&text=नमस्ते, कृपया बड़े महादेव मंदिर की फोटो भेजें" target="_blank" style="color: green;"><button style="color: green;">व्हाट्सएप पर फोटो लेने के लिए यहां क्लिक करें</button></a>
+            <a href="https://api.whatsapp.com/send?phone=+917078939001&text=नमस्ते, कृपया बड़े महादेव मंदिर की फोटो भेजें" target="_blank" style="color: green;"><button style="color: green;"> <i class="fa-brands fa-square-whatsapp" style="font-size: 50px;"></i> <br>व्हाट्सएप पर फोटो लेने के लिए यहां क्लिक करें</button></a>
                 
 
             
-            <h3 style="text-align: center; margin-top: 10px;">सभी फ़ोटो खुद देखने या डाउनलोड करने के लिए नीचे जाएँ</h3>
+            <h3 style="text-align: center; margin-top: 10px;">सभी फ़ोटो खुद देखने या डाउनलोड करने के लिए नीचे जाएँ 👇</h3>
             <!-- <button onclick="onPopup()">Share</button> -->
 
         </section>
@@ -121,14 +121,14 @@
 
         <!-- Gallery Start -->
         <section id="gallery">
-            <h2 style="text-align: center;">अब मन चाहे केक डिजाइन पाए डोरा केक ऐप पर, अभी डाउनलोड करें </h2>
+            <h2 style="text-align: center;">अब मन चाहे केक डिजाइन पाए डोरा केक ऐप पर, अभी डाउनलोड करें 👇 </h2>
             <div class="card-con">
                 <div class="card">
                     <img src="img/dora cake.jpg"
                         alt="">
                         <!-- <a href=""><button>अभी डाउनलोड करें</button></a> -->
                 </div>
-                <a href="https://play.google.com/store/apps/details?id=com.sshop.doracake" target="_blank"><button>अभी डाउनलोड करें</button></a>
+                <a href="https://play.google.com/store/apps/details?id=com.sshop.doracake" target="_blank"><button><i class="fa-solid fa-download" style="font-size: 30px;"></i> अभी डाउनलोड करें</button></a>
 
             </div>
         </section>
@@ -152,7 +152,7 @@
         <div class="popup" id="popup">
             <h4>कृपया फ़ोटो डाउनलोड करने के लिए फ़ोन नंबर दर्ज करें</h4>
             <label for="phone">मोबाइल नंबर लिखिए</label>
-            <input type="tel" id="number" placeholder="याहा मोबाइल नंबर लिखिए" required>
+            <input type="tel" id="number" placeholder="याहा मोबाइल नंबर लिखिए" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits" required>
                 <button onclick="sendEmail()">नंबर दर्ज करें</button>
         </div>
 
