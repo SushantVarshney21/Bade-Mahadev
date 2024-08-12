@@ -21,7 +21,7 @@ function visitUser(){
 
 }
 
-// visitUser()
+visitUser()
 
 function sendEmail(){
     var templateParams = {
