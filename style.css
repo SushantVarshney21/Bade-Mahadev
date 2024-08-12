@@ -334,7 +334,7 @@ html {
 
 #service {
     width: 90%;
-    padding: 80px;
+    padding: 80px 0px;
     margin-top: 22px;
     display: flex;
     align-items: center;
